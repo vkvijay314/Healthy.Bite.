@@ -38,7 +38,7 @@ body {
 /* keep hero untouched */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)), 
-                    url(/Resources/css/img/pexels-anna-pyshniuk-2453945-6145896.jpg);
+                    url(images/pexels-anna-pyshniuk-2453945-6145896.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -1222,3 +1222,4 @@ input:focus {
     padding: 25px 15px;
   }
 }
+

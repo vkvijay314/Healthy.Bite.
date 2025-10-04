@@ -37,7 +37,7 @@ body {
  
 }
 /* Hide header h1 and p on small devices */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .site-header h1,
   .site-header .pId {
     display: none;
@@ -1247,4 +1247,5 @@ input:focus {
     max-width: 200px;       /* prevent them from stretching too wide */
   }
 }
+
 

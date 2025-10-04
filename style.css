@@ -30,9 +30,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-anchor: hidden;
 }
 body {
   background: linear-gradient(135deg, #f9f9f9, #eefaf1);
+ 
+}
+/* Hide header h1 and p on small devices */
+@media (max-width: 600px) {
+  .site-header h1,
+  .site-header .pId {
+    display: none;
+  }
 }
 
 /* keep hero untouched */
@@ -44,13 +53,6 @@ header {
   background-position: center;
   position: relative;
   box-shadow: 0 0px 5px black;
-}
-/* Hide header h1 and p on small devices */
-@media (max-width: 600px) {
-  .site-header h1,
-  .site-header .pId {
-    display: none;
-  }
 }
 
 /* if some sections already had white background, reset them */
@@ -1245,6 +1247,4 @@ input:focus {
     max-width: 200px;       /* prevent them from stretching too wide */
   }
 }
-
-
 

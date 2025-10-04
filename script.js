@@ -352,21 +352,24 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
   });
 
 
-  // Select all menu items
+ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".menu-item").forEach(item => {
     item.style.cursor = "pointer"; // make it look clickable
     item.addEventListener("click", () => {
       // Smooth scroll to subscription section
-      document.querySelector("#subscription").scrollIntoView({ 
-        behavior: "smooth" 
-      });
-
-      // Optional: highlight subscription section for a few seconds
       const subSection = document.querySelector("#subscription");
+      if (!subSection) return;
+
+      subSection.scrollIntoView({ behavior: "smooth" });
+
+      // Highlight subscription section briefly
       subSection.classList.add("highlight-sub");
       setTimeout(() => subSection.classList.remove("highlight-sub"), 2000);
     });
   });
+});
+
+
 
 
 

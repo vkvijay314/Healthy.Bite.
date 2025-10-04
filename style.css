@@ -45,6 +45,13 @@ header {
   position: relative;
   box-shadow: 0 0px 5px black;
 }
+/* Hide header h1 and p on small devices */
+@media (max-width: 600px) {
+  .site-header h1,
+  .site-header .pId {
+    display: none;
+  }
+}
 
 /* if some sections already had white background, reset them */
 section, #contact, #footer, #subscription, #our-story-alt {
@@ -1222,5 +1229,6 @@ input:focus {
     padding: 25px 15px;
   }
 }
+
 
 

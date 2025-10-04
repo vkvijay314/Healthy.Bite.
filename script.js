@@ -370,6 +370,22 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
 });
 
 
+// Reveal animation on scroll (renamed to card1)
+const card1s = document.querySelectorAll(".feature-card1");
+
+function revealCard1s() {
+  const triggerBottom = window.innerHeight * 0.85;
+  card1s.forEach(card1 => {
+    const cardTop = card1.getBoundingClientRect().top;
+    if (cardTop < triggerBottom) {
+      card1.classList.add("show1");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealCard1s);
+window.addEventListener("load", revealCard1s);
+
 
 
 

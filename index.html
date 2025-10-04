@@ -46,143 +46,53 @@
     </button>
   </div>
 </header>
-<section class="menu-section" id = "menu">
-   <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
-      color: #333;
-    }
-
-    .section-features {
-      padding: 80px 20px;
-      background: #f9f9f9;
-      text-align: center;
-    }
-
-    .section-features h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    .section-features .long-copy {
-      max-width: 750px;
-      margin: 0 auto 50px;
-      font-size: 1rem;
-      color: #555;
-      line-height: 1.6;
-    }
-
-    .features-row {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-    }
-
-    .feature-card {
-      background: #fff;
-      flex: 1 1 220px;
-      max-width: 260px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      opacity: 0;
-      transform: translateY(30px);
-    }
-
-    .feature-card.show {
-      opacity: 1;
-      transform: translateY(0);
-      transition: all 0.6s ease-in-out;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
-
-    .feature-card ion-icon {
-      font-size: 2.5rem;
-      color: #27ae60;
-      margin-bottom: 15px;
-    }
-
-    .feature-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-      color: #333;
-    }
-
-    .feature-card p {
-      font-size: 0.95rem;
-      color: #666;
-      line-height: 1.5;
-    }
-
-    /* 🔹 Media Queries */
-    @media (max-width: 992px) {
-      .feature-card {
-        max-width: 45%;
-      }
-    }
-
-    @media (max-width: 800px) {
-      .feature-card {
-        max-width: 100%;
-      }
-    }
-  </style>
-
-
 
   <section class="section-features">
-    <div class="row">
-      <h2>Rush for flavor, not fillers</h2>
-      <p class="long-copy">
-        At Healthy Bite, we deliver fresh, wholesome meals that are fast,
-        tasty, and nutritious. Enjoy quick delivery, flexible options, and
-        full transparency—designed to keep you energized and eating smart.
-      </p>
+  <div class="row">
+    <h2>Rush for flavor, not fillers</h2>
+    <p class="long-copy">
+      At Healthy Bite, we deliver fresh, wholesome meals that are fast,
+      tasty, and nutritious. Enjoy quick delivery, flexible options, and
+      full transparency—designed to keep you energized and eating smart.
+    </p>
+  </div>
+
+  <div class="features-row">
+    <!-- 🔗 Smart Subscription links to subscription section -->
+    <a href="#subscription" class="feature-card1">
+      <ion-icon name="person-add-outline"></ion-icon>
+      <h3>Smart Subscription</h3>
+      <p>Never run out of your favorite meals! Our subscription plan brings
+        fresh, wholesome bites regularly with exclusive discounts and early
+        menu access.</p>
+    </a>
+
+    <div class="feature-card1">
+      <ion-icon name="bicycle-outline"></ion-icon>
+      <h3>Fast Delivery</h3>
+      <p>Short on time? Healthy Bite serves your meals fresh and ready in
+        just 20 minutes, giving you fast, wholesome food without losing
+        flavor.</p>
     </div>
 
-    <div class="features-row">
-      <div class="feature-card">
-        <ion-icon name="person-add-outline"></ion-icon>
-        <h3>Smart Subscription</h3>
-        <p>Never run out of your favorite meals! Our subscription plan brings
-          fresh, wholesome bites regularly with exclusive discounts and early
-          menu access.</p>
-      </div>
-
-      <div class="feature-card">
-        <ion-icon name="bicycle-outline"></ion-icon>
-        <h3>Fast Delivery</h3>
-        <p>Short on time? Healthy Bite serves your meals fresh and ready in
-          just 20 minutes, giving you fast, wholesome food without losing
-          flavor.</p>
-      </div>
-
-      <div class="feature-card">
-        <ion-icon name="leaf-outline"></ion-icon>
-        <h3>Pure Goodness</h3>
-        <p>All meals are 100% vegan and organic, made from fresh ingredients
-          with no artificial additives. Enjoy flavors that are good for your
-          body and kind to the planet.</p>
-      </div>
-
-      <div class="feature-card">
-        <ion-icon name="alarm-outline"></ion-icon>
-        <h3>Anytime Orders</h3>
-        <p>Craving a meal, snack, or combo? Order anything with ease and enjoy
-          fast delivery, fresh ingredients, and meals made just the way you
-          like them.</p>
-      </div>
+    <div class="feature-card1">
+      <ion-icon name="leaf-outline"></ion-icon>
+      <h3>Pure Goodness</h3>
+      <p>All meals are 100% vegan and organic, made from fresh ingredients
+        with no artificial additives. Enjoy flavors that are good for your
+        body and kind to the planet.</p>
     </div>
-  </section>
+
+    <div class="feature-card1">
+      <ion-icon name="alarm-outline"></ion-icon>
+      <h3>Anytime Orders</h3>
+      <p>Craving a meal, snack, or combo? Order anything with ease and enjoy
+        fast delivery, fresh ingredients, and meals made just the way you
+        like them.</p>
+    </div>
+  </div>
+</section>
+
 
   
   <!-- Smoothies & Drinks -->
@@ -632,6 +542,7 @@
   </body>
 
 </html>
+
 
 
 

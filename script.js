@@ -368,3 +368,19 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
     });
   });
 
+/* Fix button overlap on small phones */
+@media (max-width: 480px) {
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .hero-text-box .btn {
+    display: block;         /* stack buttons vertically */
+    margin: 10px auto;      /* center them with space */
+    font-size: 14px;        /* smaller text */
+    padding: 8px 16px;      /* smaller button size */
+    width: auto;            /* let them shrink naturally */
+    max-width: 200px;       /* prevent them from stretching too wide */
+  }
+}
+

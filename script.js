@@ -388,5 +388,3 @@ window.addEventListener("load", revealCard1s);
 
 
 
-
-
